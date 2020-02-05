@@ -1,0 +1,655 @@
+/* Index html:
+   0.Reset CSS
+   1.Style globalne 
+   2.Typografia 
+   3.Komponenty 
+   4.Nagłówek 
+   5.Galeria
+   6.O nas
+   7.Oferta
+   8.Newsletter 
+   9.Stopka 
+   10.Media Queries
+
+   Podstrona kontakt:
+   11.Formularz wiadomości
+   12.Mapa
+   13.Media Queries
+*/
+
+/* 0.Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* 1.Style globalne */
+
+body {
+    background-color: #f6f6f6;
+    color: #131313;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+    
+section {
+    padding: 0 5%;
+    text-align: center;
+    }
+
+img {
+    max-width: 100%;
+}
+
+/* 2.Typografia */
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 3.Komponenty */
+
+h1 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 140px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 58px;
+    padding-bottom: 10%;
+}
+
+h3 {
+    font-size: 53px;
+    padding-bottom: 5%;
+}
+
+h4 {
+    font-size: 41px;
+}
+
+h5 {
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+/* 4.Nagłówek */
+
+header {
+    text-align: center;
+}
+
+.logo {
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.top {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-weight: 700;
+    font-family: 'IBM Plex Serif', serif;
+    }
+
+.main-image {
+    background: url('../assets/bg_image3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.main-text-header {
+    font-size: 50px;
+}
+
+.main-text-week-header {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.main-button {
+    border: 3px solid #131313;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #131313;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.main-button:hover {
+    background-color: #131313;
+    color: #fff;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.5% 10%;
+    background-color: #fff;
+}
+
+li > a {
+    color: #131313;
+    font-size: 18px;
+    text-transform: uppercase; 
+}
+
+/* 5.Galeria */
+
+.gallery {
+    padding-top: 10%;
+}
+
+.gallery-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 5%;
+}
+
+.photo-one {
+    width: 55%;
+    padding-bottom: 2.75%;
+    margin: 0 auto;
+}
+
+.photo-two {
+    width: 40%;
+    padding-bottom: 2.75%;
+    margin: 0 auto;
+}
+
+.photo-three {
+    padding-bottom: 2.75%;
+    margin: 0 auto;
+    width: 40%;
+} 
+
+.photo-four {
+    width: 55%;
+    padding-bottom: 2.75%;
+    margin: 0 auto;
+    width: 55%;
+}
+
+/* 6.O nas */
+
+.about-us {
+    padding: 7% 10%;
+}
+
+.about-us-icon {
+    padding-bottom: 5%;
+}
+
+/* 7.Oferta */
+
+.offer {
+    padding: 10% 0;
+    background: url('../assets/bg_image4.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer p {
+    padding: 0 20% 0 20%;
+}
+
+.offer-icon-herbs, .offer-icon-seafood {
+    padding: 5% 0 3% 0;
+}
+
+/* 8.Newsletter */
+
+.newsletter {
+    padding: 8% 0 8% 0;
+    background-color: #fff;
+}
+
+.newsletter form {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10% 0 10%;
+}
+
+.newsletter input {
+    margin-right: 20px;
+    width: 60%;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #131313;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.newsletter input:hover {
+    border: 1px solid #1745ab;
+}
+
+.newsletter button:hover{
+    cursor: pointer;
+    background-color: #000;
+}
+
+.newsletter button {
+    width: 30%;
+    height: 53px;
+    background-color: #131313;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.social-media {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.fab {
+    font-size: 30px;
+    color: #131313;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* 9.Stopka */
+
+footer {
+    text-align: center;
+    padding: 2% 0;
+    font-size: 14px;
+}
+
+/* 10.Media Queries */
+
+@media screen and (max-width: 1024px) {
+    p {
+        font-size: 16px;
+    }
+    
+    .logo {
+        padding: 10px 0;
+    }
+    
+    .logo img {
+        max-width: 80%;
+    }
+    
+    .top {
+        padding-bottom: 5%;
+    }
+    
+    h1 {
+        font-size: 100px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    
+    h3 {
+        font-size: 40px;
+        padding-bottom: 10%;
+        line-height: 1.3;
+    }
+    
+    h4 {
+        font-size: 32px;
+    }
+    
+    h5 {
+        font-size: 25px;
+    }
+    
+    .main-text-header {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main-text-week-header {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .main-button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    
+    nav > ul {
+        padding: 3.5% 9%;
+    }
+    
+    li > a {
+        font-size: 16px;
+    }
+    
+    .photo-one, .photo-two, .photo-three {
+        display: none;
+    }
+    
+    .photo-four {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .about-us {
+        padding-top: 15%;
+    }
+    
+    .offer-icon-herbs, .offer-icon-seafood {
+        padding-top: 10%;
+    }
+    
+    footer {
+        padding: 3% 10%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .top {
+        padding: 10px 10px 30px 10px;
+    }
+    
+    .main-image {
+        background: url('../assets/bg_image5.jpg');
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+   
+    h1 {
+        font-size: 50px;
+        padding-top: 5%;
+    }
+    
+    h2 {
+        font-size: 35px;
+        padding-bottom: 10%;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+    
+    h4 {
+        font-size: 26px;
+    }
+    
+    h5 {
+        font-size: 20px;
+    }
+    
+    .main-text-header {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+
+    .main-text-week-header {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    
+    .main-button {
+        padding: 7px 15px;
+        font-size: 14px;
+        border: 2px solid #131313;
+    }
+    
+    nav > ul {
+        flex-direction: column;
+        padding: 6% 0 6% 0;
+    }
+    
+    nav li {
+        padding: 15px 0;
+    }
+    
+    .about-us-icon {
+        width: 80px;
+    }
+    
+    .about-us {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    
+     .gallery {
+        padding-top: 15%;
+    }
+    
+    .offer {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    
+    .newsletter form {
+        flex-direction: column;
+    }
+    
+    .newsletter input {
+        width: 100%;
+        height: 50px;
+        margin: 7% 15% 0 15%;
+        text-align: center;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    .newsletter button {
+        margin-top: 20px;
+        width: 100%;
+        height: 52px;
+        font-size: 14px;
+    }
+    
+    .social-media {
+        padding-top: 10%;
+    }
+    
+    footer {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+}
+
+/* 11.Formularz wiadomości */
+
+.contact {
+    padding: 10% 0 8%;
+}
+
+.main-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0 5% 5%;
+}
+
+.contact input, .contact textarea {
+    width: 50%;
+    border: 1px solid #cdcdcd;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #131313;
+    margin-top: 1.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.contact input {
+    height: 50px;
+}
+
+.contact textarea {
+    height: 45%;
+    padding-top: 20px;
+    margin: 1.5% 0 4%;
+}
+
+.contact input:hover {
+    border: 1px solid #1745ab;
+}
+
+.contact textarea:hover {
+    border: 1px solid #1745ab;
+}
+
+.contact button {
+    width: 200px;
+    height: 53px;
+    background-color: #131313;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact button:hover{
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* 12.Mapa */
+
+.location {
+    padding: 8% 0 0;
+    border-top: 1px dashed #9c9c9c;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 13.Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .main-heading {
+        font-size: 60px;
+        margin: 0 5% 8%;
+    }
+    
+    .contact input, .contact textarea {
+        margin-top: 3%;
+        width: 70%;
+    }
+    
+    .contact button {
+        width: 200px;
+    }
+    
+    .location {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        padding: 15% 0;
+    }
+    
+    .main-heading {
+        font-size: 40px;
+        margin: 0 10% 10%;
+        padding: 0 10%;
+        line-height: 1.2;
+    }
+    
+    .contact input, .contact textarea {
+        margin-top: 4%;
+        width: 80%;
+        padding: 0;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .contact textarea {
+        padding-top: 20px;
+    }
+    
+    .contact button {
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+    .location {
+        padding: 15% 0 0;
+        width: 100%;
+    }
+}
